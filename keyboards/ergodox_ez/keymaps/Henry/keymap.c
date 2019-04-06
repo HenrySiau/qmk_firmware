@@ -41,7 +41,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                                                                             KC_AUDIO_MUTE,
                                                                                   KC_GRAVE,           MO(3),                KC_SPACE),
 
-  [1] = LAYOUT_ergodox(KC_TRANSPARENT,KC_TRANSPARENT,KC_SPACE,KC_ENTER,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_BSPACE,LGUI(KC_L),LALT(LSFT(KC_L)),KC_UP,LALT(LSFT(KC_J)),KC_TRANSPARENT,KC_TRANSPARENT,KC_LSHIFT,KC_LALT,KC_LEFT,KC_DOWN,KC_RIGHT,LALT(LSFT(KC_K)),KC_TRANSPARENT,LCTL(KC_EQUAL),LCTL(KC_MINUS),LGUI(LSFT(KC_BSLASH)),LGUI(KC_BSLASH),LGUI(LSFT(KC_ENTER)),KC_TRANSPARENT,KC_TRANSPARENT,KC_LALT,KC_LCTRL,KC_LGUI,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,LCTL(KC_J),LGUI(LSFT(KC_K)),KC_TRANSPARENT,KC_TRANSPARENT,KC_MINUS,KC_SLASH,KC_7,KC_8,KC_9,KC_PLUS,LALT(KC_BSPACE),KC_DQUO,LCTL_T(KC_4),LALT_T(KC_5),LSFT_T(KC_6),KC_EQUAL,KC_RABK,LGUI(KC_ENTER),KC_0,KC_1,KC_2,KC_3,KC_ASTR,KC_TRANSPARENT,KC_LGUI,KC_LALT,KC_LCTRL,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT),
+  [1] = LAYOUT_ergodox(
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_SPACE,              KC_ENTER,                  KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_BSPACE,              LGUI(KC_L),           LALT(LSFT(KC_L)),      KC_UP,                     LALT(LSFT(KC_J)),        KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_LSHIFT,              KC_LALT,              KC_LEFT,               KC_DOWN,                   KC_RIGHT,                LALT(LSFT(KC_K)),
+    KC_TRANSPARENT,         LCTL(KC_EQUAL),       LCTL(KC_MINUS),        LGUI(LSFT(KC_BSLASH)),     LGUI(KC_BSLASH),         LGUI(LSFT(KC_ENTER)),    KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_LALT,              KC_LCTRL,              KC_LGUI,                   KC_TRANSPARENT,
+                                                                                                                             KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                      KC_TRANSPARENT,
+                                                                                                    KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        LCTL(KC_J),                LGUI(LSFT(KC_K)),        KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_MINUS,               KC_SLASH,             KC_7,                  KC_8,                      KC_9,                    KC_PLUS,                 LALT(KC_BSPACE),
+                            KC_DQUO,              LCTL_T(KC_4),          LALT_T(KC_5),              LSFT_T(KC_6),            KC_EQUAL,                KC_RABK,
+    LGUI(KC_ENTER),         KC_0,                 KC_1,                  KC_2,                      KC_3,                    KC_ASTR,                 KC_TRANSPARENT,
+                                                  KC_LGUI,               KC_LALT,                   KC_LCTRL,                KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                             KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                      KC_TRANSPARENT,
+                                                                                                    KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT),
 
   [2] = LAYOUT_ergodox(
     // 1                2               3                   4                     5                 6                      7
@@ -64,15 +83,109 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                                                                            KC_TRANSPARENT,
                                                                                   KC_TRANSPARENT,   KC_TRANSPARENT,        KC_TRANSPARENT),
 
-  [3] = LAYOUT_ergodox(KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_LSHIFT,KC_LALT,KC_LGUI,KC_LCTRL,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_F12,KC_F7,KC_F8,KC_F9,KC_TRANSPARENT,KC_TRANSPARENT,KC_F11,LCTL_T(KC_F4),LGUI_T(KC_F5),LALT_T(KC_F6),KC_RSHIFT,KC_TRANSPARENT,KC_TRANSPARENT,KC_F10,KC_F1,MT(MOD_HYPR, KC_F2),MT(MOD_MEH, KC_F3),KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT),
+  [3] = LAYOUT_ergodox(
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_LSHIFT,            KC_LALT,               KC_LGUI,                   KC_LCTRL,                KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,
+                                                                                                                             KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                      KC_TRANSPARENT,
+                                                                                                    KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
 
-  [4] = LAYOUT_ergodox(KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_MEH,KC_HYPR,KC_TRANSPARENT,KC_TRANSPARENT,LGUI(LSFT(KC_ENTER)),KC_TRANSPARENT,KC_LSHIFT,KC_LALT,KC_LGUI,KC_LCTRL,LCTL(KC_J),KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_PGUP,KC_PGDOWN,LGUI(LSFT(KC_K)),LGUI(KC_ENTER),KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_LBRACKET,KC_RBRACKET,KC_TRANSPARENT,KC_TRANSPARENT,KC_BSLASH,KC_MINUS,KC_7,KC_8,KC_9,KC_UP,KC_TRANSPARENT,KC_EQUAL,KC_4,KC_5,KC_6,KC_DOWN,KC_DELETE,KC_TRANSPARENT,KC_0,KC_1,KC_2,KC_3,KC_GRAVE,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_LEFT,KC_RIGHT),
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_F12,               KC_F7,                 KC_F8,                     KC_F9,                   KC_TRANSPARENT,          KC_TRANSPARENT,
+                            KC_F11,               LCTL_T(KC_F4),         LGUI_T(KC_F5),             LALT_T(KC_F6),           KC_RSHIFT,               KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_F10,               KC_F1,                 MT(MOD_HYPR, KC_F2),       MT(MOD_MEH, KC_F3),      KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                  KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                             KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                      KC_TRANSPARENT,
+                                                                                                    KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT),
 
-  [5] = LAYOUT_ergodox(KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_P,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TAB,KC_F2,KC_F3,KC_F4,KC_F5,KC_T,KC_B,KC_SPACE,KC_Q,KC_W,KC_E,KC_R,KC_2,KC_3,KC_1,KC_S,KC_D,KC_F,KC_4,KC_C,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_LALT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_A,KC_C,KC_P,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT),
+  [4] = LAYOUT_ergodox(
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_MEH,                KC_HYPR,                   KC_TRANSPARENT,          KC_TRANSPARENT,          LGUI(LSFT(KC_ENTER)),
+    KC_TRANSPARENT,         KC_LSHIFT,            KC_LALT,               KC_LGUI,                   KC_LCTRL,                LCTL(KC_J),
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_PGUP,                   KC_PGDOWN,               LGUI(LSFT(KC_K)),        LGUI(KC_ENTER),
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,
+                                                                                                                             KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                      KC_TRANSPARENT,
+                                                                                                    KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
 
-  [6] = LAYOUT_ergodox(KC_TRANSPARENT,KC_TRANSPARENT,KC_HASH,KC_AMPR,KC_CIRC,KC_TRANSPARENT,KC_TRANSPARENT,KC_BSPACE,KC_EXLM,KC_MINUS,KC_LCBR,KC_RCBR,KC_PIPE,KC_BSLASH,KC_TRANSPARENT,KC_AT,KC_DLR,KC_LPRN,KC_RPRN,KC_GRAVE,KC_TRANSPARENT,KC_PERC,KC_UNDS,KC_LBRACKET,KC_RBRACKET,KC_TILD,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_LGUI,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT),
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_LBRACKET,               KC_RBRACKET,             KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_BSLASH,              KC_MINUS,             KC_7,                  KC_8,                      KC_9,                    KC_UP,                   KC_TRANSPARENT,
+                            KC_EQUAL,             KC_4,                  KC_5,                      KC_6,                    KC_DOWN,                 KC_DELETE,
+    KC_TRANSPARENT,         KC_0,                 KC_1,                  KC_2,                      KC_3,                    KC_GRAVE,                KC_TRANSPARENT,
+                                                  KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                             KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                      KC_TRANSPARENT,
+                                                                                                    KC_TRANSPARENT,          KC_LEFT,                 KC_RIGHT),
 
-  [7] = LAYOUT_ergodox(KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_LSHIFT,KC_LALT,KC_LCTRL,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_LGUI,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_DOT,KC_HASH,KC_TRANSPARENT,KC_TRANSPARENT,KC_MINUS,KC_SLASH,KC_7,KC_8,KC_9,KC_PLUS,KC_TRANSPARENT,KC_DQUO,KC_4,KC_5,KC_6,KC_EQUAL,KC_RABK,KC_TRANSPARENT,KC_0,KC_1,KC_2,KC_3,KC_KP_ASTERISK,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT),
+  [5] = LAYOUT_ergodox(
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,        KC_TRANSPARENT,       KC_TRANSPARENT,        KC_P,                      KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TAB,                KC_F2,                KC_F3,                 KC_F4,                     KC_F5,                   KC_T,                    KC_B,
+    KC_SPACE,              KC_Q,                 KC_W,                  KC_E,                      KC_R,                    KC_2,
+    KC_3,                  KC_1,                 KC_S,                  KC_D,                      KC_F,                    KC_4,                    KC_C,
+    KC_TRANSPARENT,        KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_LALT,
+                                                                                                                            KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                     KC_TRANSPARENT,
+                                                                                                   KC_A,                    KC_C,                    KC_P,
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+                            KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                  KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                             KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                      KC_TRANSPARENT,
+                                                                                                    KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT),
+
+  [6] = LAYOUT_ergodox(
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_HASH,               KC_AMPR,                   KC_CIRC,                 KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_BSPACE,              KC_EXLM,              KC_MINUS,              KC_LCBR,                   KC_RCBR,                 KC_PIPE,                 KC_BSLASH,
+    KC_TRANSPARENT,         KC_AT,                KC_DLR,                KC_LPRN,                   KC_RPRN,                 KC_GRAVE,
+    KC_TRANSPARENT,         KC_PERC,              KC_UNDS,               KC_LBRACKET,               KC_RBRACKET,             KC_TILD,                 KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,
+                                                                                                                             KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                      KC_TRANSPARENT,
+                                                                                                    KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+                            KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                  KC_LGUI,               KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                             KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                      KC_TRANSPARENT,
+                                                                                                    KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT),
+
+  [7] = LAYOUT_ergodox(
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_LSHIFT,              KC_LALT,              KC_LCTRL,              KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_TRANSPARENT,            KC_LGUI,
+                                                                                                                             KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                      KC_TRANSPARENT,
+                                                                                                    KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+
+    // 1                    2                     3                      4                          5                        6                        7
+    KC_TRANSPARENT,         KC_TRANSPARENT,       KC_TRANSPARENT,        KC_DOT,                    KC_HASH,                 KC_TRANSPARENT,          KC_TRANSPARENT,
+    KC_MINUS,               KC_SLASH,             KC_7,                  KC_8,                      KC_9,                    KC_PLUS,                 KC_TRANSPARENT,
+                            KC_DQUO,              KC_4,                  KC_5,                      KC_6,                    KC_EQUAL,                KC_RABK,
+    KC_TRANSPARENT,         KC_0,                 KC_1,                  KC_2,                      KC_3,                    KC_KP_ASTERISK,          KC_TRANSPARENT,
+                                                  KC_TRANSPARENT,        KC_TRANSPARENT,            KC_TRANSPARENT,          KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                             KC_TRANSPARENT,          KC_TRANSPARENT,
+                                                                                                                                                      KC_TRANSPARENT,
+                                                                                                    KC_TRANSPARENT,           KC_TRANSPARENT,         KC_TRANSPARENT),
 
 };
 
